@@ -1,5 +1,6 @@
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import MobileMenu from "@/components/MobileMenu";
 
 export const metadata = {
   title: "Jack Clauss",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body suppressHydrationWarning>
         <div className="shell">
           <Sidebar />
+          <MobileMenu />
           <main className="main">{children}</main>
         </div>
       </body>
