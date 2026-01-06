@@ -352,3 +352,97 @@ a:hover { text-decoration: none; }
 }
 
 
+/* =========================
+   HARD MOBILE/DESKTOP SPLIT
+   ========================= */
+
+/* Default: hide only the burger button on desktop */
+.burger {
+  display: none !important;
+}
+
+/* Mobile only */
+@media (max-width: 720px) {
+  .burger {
+    display: flex !important;
+  }
+  .sidebar {
+    display: none !important;
+  }
+}
+
+
+/* Default: sidebar ON on desktop */
+.sidebar {
+  display: flex;
+}
+
+/* Mobile only */
+@media (max-width: 720px) {
+  /* hide desktop sidebar */
+  .sidebar {
+    display: none !important;
+  }
+
+  /* show hamburger */
+  .burger {
+    display: flex !important;
+  }
+
+  /* overlays can display when open (your component mounts them) */
+}
+@media (max-width: 720px) {
+  /* kill sidebar math on mobile */
+  :root {
+    --sidebar-w: 0px !important;
+  }
+
+  /* if your shell is flex, don't reserve left column space */
+  .shell {
+    display: block !important;
+  }
+
+  /* remove any desktop left spacing */
+  .main {
+    margin-left: 0 !important;
+    padding-left: var(--pad) !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  /* if you used a desktop transform to “optically center” past the sidebar */
+  .stage {
+    transform: none !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* center frames explicitly */
+  .hero,
+  .frame {
+    margin: 0 auto !important;
+    left: auto !important;
+    right: auto !important;
+  }
+
+  /* CRITICAL: if you have click zones that start at var(--sidebar-w), undo it */
+  .clickZone.left {
+    left: 0 !important;
+  }
+
+  .clickZone.right {
+    right: 0 !important;
+  }
+}
+
+@media (max-width: 720px) {
+  /* space under the burger so images never overlap */
+  .main {
+    padding-top: 56px !important; /* adjust 48–70px to taste */
+  }
+
+  /* if your stage is the main centering wrapper, you can use this instead/too */
+  .stage {
+    padding-top: 20px !important;
+  }
+}
