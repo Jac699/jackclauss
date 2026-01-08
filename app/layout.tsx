@@ -11,11 +11,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body suppressHydrationWarning>
-        <div className="shell">
-          <Sidebar />
-          <MobileMenu />
-          <main className="main">{children}</main>
-        </div>
+      <div className="shell">
+  <Sidebar />
+  <main className="main">
+    <MobileMenu />
+    {children}
+  </main>
+</div>
       </body>
     </html>
   );

@@ -22,12 +22,12 @@ export const galleries: Gallery[] = [
       "/work/work-1/09.jpg",
       "/work/work-1/10.jpg",
       "/work/work-1/11.jpg",
-      "/work/work-1/12.jpg",
+
     ],
   },
   {
     slug: "work-2",
-    label: "Figures",
+    label: "Figure",
     images: [
       "/work/work-2/01.jpg",
       "/work/work-2/02.jpg",
@@ -41,7 +41,7 @@ export const galleries: Gallery[] = [
   },
   {
     slug: "work-3",
-    label: "Nomination",
+    label: "Either/Or",
     images: [
       "/work/work-3/01.jpg",
       "/work/work-3/02.jpg",
@@ -56,6 +56,26 @@ export const galleries: Gallery[] = [
   
     ],
   },
+
+  {
+    slug: "work-4",
+    label: "Installation",
+    images: [
+      "/work/work-4/01.jpg",
+      "/work/work-4/02.jpg",
+      "/work/work-4/03.jpg",
+      "/work/work-4/04.jpg",
+      "/work/work-4/05.jpg",
+      "/work/work-4/06.jpg",
+      "/work/work-4/07.jpg",
+      "/work/work-4/08.jpg",
+      "/work/work-4/09.jpg",
+      "/work/work-4/10.jpg",
+      "/work/work-4/11.jpg",
+      "/work/work-4/12.jpg",
+    ],
+  },
+  
 ];
 
 export function getGallery(slug: string) {
