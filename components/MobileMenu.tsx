@@ -49,7 +49,7 @@ export default function MobileMenu() {
             className={`mobileLink ${pathname === "/work/work-2" ? "active" : ""}`}
             href="/work/work-2"
           >
-            Figures
+            Figure
           </Link>
 
           <Link
