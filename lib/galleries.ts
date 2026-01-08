@@ -71,7 +71,8 @@ export const galleries: Gallery[] = [
       "/work/work-4/08.jpg",
       "/work/work-4/09.jpg",
       "/work/work-4/10.jpg",
-      "/work/work-4/11.jpg",    ],
+      "/work/work-4/11.jpg",    
+    ],
   },
   
 ];
